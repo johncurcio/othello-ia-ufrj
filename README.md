@@ -8,7 +8,7 @@
 
 ## Estratégias
 
-1. Minimax/alfabeta com pesos para decidir a jogada
-2. Minimax com minimização dos movimentos do oponente
+1. ``table_weights_player.py``: Minimax/alfabeta com pesos para decidir a jogada
+2. ``minimize_movements_player.py``: Minimax com minimização dos movimentos do oponente
 
-Estratégia 1 foi escolhida para ser usada no torneio.  
+Estratégia ``table_weights_player.py`` foi escolhida para ser usada no torneio.  
