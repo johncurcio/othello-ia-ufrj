@@ -16,7 +16,7 @@ Nosso grupo implementou duas estratégias baseadas no algoritmo minimax com cort
 ```
 
 Os pesos foram definidos empiricamente, apenas jogando Reversi no celular e observando onde era bom ou ruim jogar. Quanto maior o peso de uma casa do tabuleiro, mais favorável é jogar ali.  
-Para calcular a jogada a ser feita, olhamos para todos os tabuleiros possíveis a partir do ponto que estamos no jogo. O valor calculado pela heurítica é formado pela soma dos pesos das nossas peças no tabuleiro e a subtração dos pesos das peças adversárias.
+Para calcular a jogada a ser feita, olhamos para os tabuleiros possíveis a partir do ponto que estamos no jogo e até a profundidade de busca que limitamos. O valor calculado pela heurística nas folhas é formado pela soma dos pesos das nossas peças no tabuleiro e a subtração dos pesos das peças adversárias.
 
 
 2. O segundo agente ``minimize_movements_player.py`` usa como heurística minimizar o movimento do oponente, ou seja, ele sempre joga numa casa que vai deixar o oponente com o menor número de quadrados possíveis para ele jogar na próxima rodada.
