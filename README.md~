@@ -9,13 +9,13 @@
 
 Nosso grupo implementou duas estratégias baseadas no algoritmo minimax com corte alfa beta para jogar Othelo:
 
-1. O primeiro agente encontado em ``table_weights_player.py`` usa uma tabela de pesos para decidir onde quer jogar. O tabuleiro foi divido em 8 áreas diferentes e cada uma dessas áreas recebeu um peso diferente, como pode ser visto em
+1. O primeiro agente encontado em ``table_weights_player.py`` usa uma tabela de pesos para decidir onde quer jogar. O tabuleiro foi divido em 8 áreas diferentes e cada uma dessas áreas recebeu um peso, como pode ser visto em
 
-```
+ ```
   m = {'H':10,'P':-3,'I':5,'C':3,'M':3,'N':-1,'E':1,'A':0}
-```
-
-Os pesos foram definidos empiricamente, apenas jogando Reversi no celular e observando onde era bom ou ruim jogar. Quanto maior o peso de uma casa do tabuleiro, mais favorável é jogar ali.  
+ ``` 
+      
+ Os pesos foram definidos empiricamente, apenas jogando Reversi no celular e observando onde era bom ou ruim jogar. Quanto maior o peso de uma casa do tabuleiro, mais favorável é jogar ali.  
 Para calcular a jogada a ser feita, olhamos para os tabuleiros possíveis a partir do ponto que estamos no jogo e até a profundidade de busca que limitamos. O valor calculado pela heurística nas folhas é formado pela soma dos pesos das nossas peças no tabuleiro e a subtração dos pesos das peças adversárias.
 
 
