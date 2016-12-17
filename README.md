@@ -7,9 +7,9 @@
 
 ## Estratégias
 
-Nosso grupo implementou duas estratégias baseadas no algoritmo minimax com corte alfa beta para jogar Othelo:
+Nosso grupo implementou duas estratégias baseadas no algoritmo minimax com corte alfa beta para jogar Othello:
 
-1. O primeiro agente encontado em ``table_weights_player.py`` usa uma tabela de pesos para decidir onde quer jogar. O tabuleiro foi divido em 8 áreas diferentes e cada uma dessas recebeu um peso, como pode ser visto em
+1. O primeiro agente encontado em ``table_weights_player.py`` usa uma tabela de pesos para decidir onde quer jogar. O tabuleiro foi dividido em 8 áreas diferentes e cada uma dessas recebeu um peso, como pode ser visto em
 
  ```
   m = {'H':10,'P':-3,'I':5,'C':3,'M':3,'N':-1,'E':1,'A':0}
